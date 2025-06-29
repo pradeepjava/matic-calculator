@@ -9,8 +9,13 @@ form {
 
 .input-group {
   display: flex;
-  justify-content: space-evenly;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.input-group > div {
+  flex: 1 1 45%;
 }
 
 label {
@@ -33,6 +38,7 @@ input {
 }
 
 button {
+  margin-top: 1rem;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #76c0ae;
@@ -48,6 +54,7 @@ button {
 button:hover {
   background-color: #aaf1d6;
 }
+
 * {
   box-sizing: border-box;
 }
